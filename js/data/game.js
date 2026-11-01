@@ -150,6 +150,8 @@ const game = {
         new Achievement("No turning back", "Go meta and be reborn", "&Omega;", () => game.metaLayer.active),
         new Achievement("Endgame", "Reach layer 1.8e308 and finish "+mod.primaryName+mod.secondaryName, "Ʊ", () => game.metaLayer.layer.gte(mod.Infinities[0])),
         new Achievement("wat", "Reach Layer 1e1000", "⚗", () => game.metaLayer.layer.gte(1e1000)),
+        new Achievement("huh...", "Reach Layer 1e2500", "⚗[⚗]", () => game.metaLayer.layer.gte(1e2500)),
+        new Achievement("Was that supposed to be happen?", "Reach Layer ~e35K", "<span style='font-size: 50%;'>(↑↑↑114)", () => game.metaLayer.layer.gte("1e35000"))
     ],
     secretAchievements: [
         new Achievement("SLEEP", "Reach Layer 1e1024", "💤", () => game.metaLayer.layer.gte(1e1024)),
