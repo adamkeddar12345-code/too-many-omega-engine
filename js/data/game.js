@@ -101,6 +101,8 @@ const game = {
         new Achievement("Seven Heaven", "Have 1 <span>α<sub>7</sub></span> Generator", "<span>α<sub>7</sub></span>", () => game.layers[0] && game.layers[0].generators[6].bought.gt(0)),
         new Achievement("Octacore", "Have 1 <span>α<sub>8</sub></span> Generator", "<span>α<sub>8</sub></span>", () => game.layers[0] && game.layers[0].generators[7].bought.gt(0)),
         new Achievement("Upgradalicious", "Buy your first α Upgrade", "<span>α<sub>UP</sub></span>", () => game.layers[0] && game.layers[0].upgrades[0].level.gt(0)),
+        new Achievement("Noncore", "Have 1 <span>α<sub>9</sub></span> Generator", "<span>α<sub>9</sub></span>", () => game.layers[0] && game.layers[0].generators[8].bought.gt(0)),
+        new Achievement("<span>α<sub>10</sub></span>", "Have 1 <span>α<sub>10</sub></span> Generator", "<span>α<sub>10</sub></span>", () => game.layers[0] && game.layers[0].generators[9].bought.gt(0)),
         new Achievement("Stonks", "Reach 1e18 α", "α", () => game.layers[0] && game.layers[0].resource.gte(1e18)),
         new Achievement("Other Times Await", "Go β", "β", () => game.layers[1] && game.layers[1].timesReset > 0),
         new Achievement("POW", "Have 1 <span>β<sub>P<sub>1</sub></sub></span> Generator", "<span>β<sub>P<sub>1</sub></sub></span>", () => game.layers[1] && game.layers[1].powerGenerators[0].bought.gt(0)),
@@ -147,6 +149,7 @@ const game = {
         new Achievement("Idle^2", "Buy the meta upgrade", "↑<sub>2<sub>", () => game.restackLayer.metaUpgrade.level.gte(1)),
         new Achievement("No turning back", "Go meta and be reborn", "&Omega;", () => game.metaLayer.active),
         new Achievement("Endgame", "Reach layer 1.8e308 and finish "+mod.primaryName+mod.secondaryName, "Ʊ", () => game.metaLayer.layer.gte(mod.Infinities[0])),
+        new Achievement("wat", "Reach Layer 1e1000", "⚗", () => game.metaLayer.layer.gte(1e1000)),
     ],
     secretAchievements: [
         new Achievement("SLEEP", "Reach Layer 1e1024", "💤", () => game.metaLayer.layer.gte(1e1024)),
