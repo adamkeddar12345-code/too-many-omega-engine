@@ -149,7 +149,7 @@ const game = {
         new Achievement("Endgame", "Reach layer 1.8e308 and finish "+mod.primaryName+mod.secondaryName, "Ʊ", () => game.metaLayer.layer.gte(mod.Infinities[0])),
     ],
     secretAchievements: [
-        new Achievement("wut", "Reach Layer 1e1024", "💤", () => game.metaLayer.layer.gte(1000)),
+        new Achievement("SLEEP", "Reach Layer 1e1024", "💤", () => game.metaLayer.layer.gte(1e1024)),
         new Achievement("A very long wait...", "Have a game with over 3 months of time", "...", () => game.timeSpent > 50803200),
         new Achievement("Aleph-π", "Have πe314 aleph", "&aleph;<sub>π</sub>", () => game.alephLayer.aleph.gte("3.141e341")),
         new Achievement("Meta sucks!", "Get &Omega; without meta", "&Omega;&Omega;&Omega;&Omega;&Omega;&Omega;&Omega;&Omega;&Omega;&Omega;", () => game.highestLayer >= 47 && !game.metaLayer.active),
